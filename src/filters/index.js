@@ -1,5 +1,5 @@
 let formartDate = (str) => {
-  console.log(str)
+
   //传入为空直接返回
   if (!str) {
     return ''

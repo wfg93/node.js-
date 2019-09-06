@@ -6,7 +6,10 @@ const EData = (url,type='get') => (params) => apiServe[type](commonUrl+url,param
 
 //首页
 export const HomePaGe={
-
-  Atestpage:EData('/topics')
+//主题
+  Atestpage:EData('/topics'),
+//详情
+  //detaiLS:EData('/topic/')
 
 }
+

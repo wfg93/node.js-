@@ -18,7 +18,7 @@
         <!--标题右侧-->
         <div class="t_b">
           <ul>
-            <li style="text-align: center">首页</li>
+            <li style="text-align: center" @click="Homepage">首页</li>
             <li>新手入门</li>
             <li>API</li>
             <li>关于</li>
@@ -40,6 +40,12 @@
     data() {
       return {
         input4: ""
+      }
+    },
+    methods:{
+      Homepage(){
+        console.log("33333")
+        this.$router.replace('/')
       }
     }
   }
@@ -64,6 +70,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         .imga {
           width: 31%;
           height: 48%;
@@ -78,7 +85,7 @@
           height: 45%;
           margin-top: 8px;
           position: relative;
-          margin-right: 39px;
+          margin-right: 66px;
           .biao{
             position: absolute;
             top: 5px;
@@ -108,6 +115,9 @@
             color: #ccc;
             padding:  0 10px;
 
+          }
+          li:hover{
+            color: #fff;
           }
         }
       }
