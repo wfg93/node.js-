@@ -122,6 +122,7 @@
           })
           if (res.success === ERR_OK) {
             this.lista = res.data;
+            console.log(res)
 
 
           }
@@ -223,22 +224,19 @@
           }
           .Pl_top {
 
-            width: 33px;
-            height: 20px;
+            width: 46px;
             text-align: center;
-            line-height: 21px;
             background: #80BD01;
             color: #fff;
             font-size: 15px;
           }
           .Pl_toz {
-            width: 33px;
-            height: 20px;
+            width: 51px;
             text-align: center;
-            line-height: 21px;
             background: #E5E5E5;
             color: #999999;
             font-size: 15px;
+            padding: 2px 0px;
           }
 
           .ti_tle {

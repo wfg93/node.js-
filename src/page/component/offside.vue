@@ -173,7 +173,6 @@
 </script>
 <style lang="scss" scoped>
   .personal {
-    width: 308px;
     min-width: 290px;
     height: 186px;
     background: #fff;
