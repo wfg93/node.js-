@@ -1,4 +1,5 @@
 <template>
+  <!--底部-->
     <div class="bottm">
 
 <div class="zhong_a">

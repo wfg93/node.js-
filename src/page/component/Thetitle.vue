@@ -1,4 +1,5 @@
 <template>
+  <!--头部-->
   <div>
     <!--标题-->
     <div class="b_t">
@@ -15,6 +16,9 @@
             <input/>
           </div>
         </div>
+
+
+
         <!--标题右侧-->
         <div class="t_b">
           <ul>
@@ -23,7 +27,9 @@
             <li>API</li>
             <li>关于</li>
             <li>注册</li>
-            <li>登录</li>
+            <li @click="longin">登录</li>
+            <li>设置</li>
+            <li>退出</li>
           </ul>
         </div>
 
@@ -46,6 +52,9 @@
       Homepage(){
         console.log("33333")
         this.$router.replace('/')
+      },
+      longin(){
+        this.$router.replace('/thelogin')
       }
     }
   }
@@ -54,7 +63,7 @@
 <style lang="scss" scoped>
   .b_t {
     width: 100%;
-    height: 65px;
+    height: 50px;
     background: #444444;
 
     .b_T {
@@ -65,16 +74,12 @@
       display: flex;
       justify-content: space-between;
       .t_b {
-
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
+        width: 390px;
         align-items: center;
+        display: flex;
 
         .imga {
           width: 31%;
-          height: 48%;
-
           img {
             width: 100%;
             height: 100%;
@@ -82,10 +87,10 @@
         }
         .iputa {
           width: 56%;
-          height: 45%;
-          margin-top: 8px;
+          height: 52%;
           position: relative;
-          margin-right: 66px;
+          margin: 0px 0px 0px 20px;
+          position: relative;
           .biao{
             position: absolute;
             top: 5px;
@@ -101,12 +106,10 @@
             background: #888888;
             border: solid 1px #888888;
           }
-
         }
 
         ul {
-
-          height: 50%;
+          width: 389px;
           display: flex;
           li {
             height: 100%;
@@ -114,6 +117,7 @@
             line-height: 32px;
             color: #ccc;
             padding:  0 10px;
+            font-size: 13px;
 
           }
           li:hover{

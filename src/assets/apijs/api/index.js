@@ -9,7 +9,7 @@ export const HomePaGe={
 //主题
   Atestpage:EData('/topics'),
 //详情
-  //detaiLS:EData('/topic/')
+  loginname:EData('/loginname')
 
 }
 
